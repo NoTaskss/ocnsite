@@ -1,0 +1,839 @@
+.maincontainer {
+  padding: 0rem 0rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.main {
+  min-height: 100vh;
+  padding: 0rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.headerinfoholder{
+  display:flex;
+  gap: 20px; 
+  width:50%;
+}
+
+.headerlinks{
+
+}
+
+.headertitle{
+  width:30%;
+  height:50px; 
+  background-Color:#e84839;
+  color:white;
+  font-Weight:600;
+  font-Size:18px; 
+  border-Width:0px;
+
+}
+
+.logoholder{
+  position:absolute;
+  left: 50px;
+  top:80px;
+}
+
+.smokeholder{
+  width: 60%;
+  height: 100%;
+  position:absolute;
+  right:0px; 
+  /* left: 0px;  */
+  margin-Inline:auto;
+  top:0px;
+  display:flex; 
+  align-Items:center; 
+  justify-Content:center;
+}
+
+.presalecardholder{
+  position:absolute;
+  bottom:250px; 
+  right:150px;
+}
+
+.manholder{
+  width:100%;
+  /* position:absolute;
+  bottom:160px; */
+  display:flex; 
+  align-Items:center; 
+  justify-Content:center;
+  transform: scale(1.2) !important;
+}
+
+.title {
+  font-Size: 100px;
+  color:#e84839;
+  font-Family: Poiret One;
+  text-Transform: uppercase;
+  text-shadow: -4px 5px 5px rgba(0,0,0,0.6);
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.buttonText{
+  font-Size: 40px;
+  font-Family:Six Caps;
+}
+
+.tokeninfotitletext{
+  color:#e84839; 
+  font-Size: 70px;  
+  font-Family: Poiret One;
+  margin-Bottom: 10px;
+  width:100%; 
+  text-Transform:uppercase;
+  text-Align:center;
+  margin-block-start: 0;
+}
+
+.tokeninfotext{
+  font-Size: 40px; 
+  font-Family:Six Caps;
+}
+
+.tokeninfonametext{
+  font-Size: 40px; 
+  font-Family:Six Caps;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.tokeninfodesc{
+
+}
+
+.tokenabouttitle{
+  color:#e84839;
+  font-Size: 80px;
+  font-Family: "Poiret One"; 
+  margin-Bottom: 0;
+  margin-block-start: 0;
+  width:100%;
+  text-Transform:uppercase;
+  text-Align:"left";
+  text-shadow: -4px 5px 5px rgba(0,0,0,0.6);
+}
+
+.tokenaboutdesc{
+  color:white; 
+  font-Size: 35px; 
+  font-Family:"Poiret One";
+}
+
+.familybox{
+  width:20%; 
+  height:50%; 
+  padding: 0; 
+  border-Width: 2px; 
+  border-Color:white; 
+  border-Style:solid;
+  display:flex; 
+  align-Items:center; 
+  justify-Content:center;
+  flex-Direction:column;
+  border-Radius: 12px;
+}
+
+.familyboxsec{
+  width:20%;
+  height:80%; 
+  padding: 0; 
+  border-Width: 2; 
+  border-Color:white; 
+  border-Style:solid; 
+  display:flex; 
+  align-Items:center; 
+  justify-Content:center;
+  flex-Direction:column; 
+  border-Radius: 12px;
+}
+
+.utilholder{
+  width:100%;
+  height:100%;
+  gap:20px;
+}
+
+.utilbox{
+  width:30%;
+  height:100%; 
+  padding: 0;
+  border-Width: 2px; 
+  border-Color:white;
+  border-Style:solid; 
+  display:flex;
+  align-Items:center; 
+  justify-Content:center;
+  flex-Direction:column; 
+  border-Radius: 12px;
+}
+
+.utiltext{
+  color:white; 
+  font-Size: 20px; 
+  font-Family:Poiret One;
+  text-Transform:uppercase
+}
+
+.walletButtons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Pangolin, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+  
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  padding: 0px;
+}
+
+.column {
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* border-radius: 16px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  height: 500px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  border-Bottom-Width:3px;
+  border-Top-Color:black;
+  border-Right-Color:black; 
+  border-Left-Color:black;
+  border-Bottom-Color:#e84839;
+  border-Style:solid;
+}
+
+.columns {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100vw;
+  align-self: center;
+  line-height: 1.3;
+  /* max-width: 960px; */
+}
+
+.infocolumn{
+  height:800px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  border-Bottom-Width:3px;
+  border-Top-Color:black;
+  border-Right-Color:black; 
+  border-Left-Color:black;
+  border-Bottom-Color:#e84839;
+  border-Style:solid;
+}
+
+.infobigcolumn{
+  height:800px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImg{
+  width: "100%";
+  height: "100%";
+  border-radius: 200;
+}
+
+.logotext{
+  font-Size: 40;
+  color:"red";
+}
+
+.utilrow{
+  width:100%;
+  height:100%;
+}
+
+.herobutton{
+  border-Width: 2px;
+  border-Color:White; 
+  box-Shadow:none;
+  width:33%;
+  height:80px;
+  display:flex; 
+  justify-Content:center; 
+  align-Items:center;
+}
+
+.tokeninforows{
+  display: flex;
+  align-Items:flex-start;
+  justify-Content:flex-start;
+  flex-Direction: row;
+  gap: 16px;
+  width:80%;
+  height: 100%;
+  margin-Top: 30px;
+}
+
+.tokeninfobox{
+  width:100%;
+  height:20%; 
+  border-Radius: 6px;
+  display:flex; 
+  align-Items:center;
+  justify-Content:center;
+  flex-Direction:column;
+  border-Width: 2px;
+  border-Color:black; 
+  border-Style:solid; 
+  position:relative;
+}
+
+.presalecontainer{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000000;
+  padding-top: 20px;
+}
+
+.presaleslide{
+  /* height:800px; */
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.circlelinedown{
+  width:2px; 
+  height:30px; 
+  background-Color:#ffc225;
+}
+
+.circleHollow{
+  width:20px; 
+  height:20px;
+  border-Radius:50px;
+  border-Width:5px;
+  border-Color:#ffc225;
+  border-Style:solid
+}
+
+.tokenomictitle{
+  font-Size:40px;
+  
+  color: white;
+  margin-Block-End:0;
+  margin-Block-Start:20px;
+}
+
+.tokenomictitlesmall{
+  font-Size:25px; 
+  margin-Block-End:0; 
+  margin-Block-Start:0; 
+  margin-Top:10px;
+}
+
+@media (max-width: 1000px) {
+
+  .presalecardholder{
+    transform: scale(.5);
+    bottom: -100px;
+    right: 75%;
+    left: 0%;
+  }
+
+  .headerinfoholder{
+    display: none;
+  }
+  
+  .headerlinks{
+    display: none;
+  }
+
+  .herobutton{
+    width:33%;
+    height:50px;
+  }
+
+  .tokeninforows{
+    height: 50%;
+    margin-Top: 0px;
+  }
+
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .smokeholder{
+    top: 0px;
+  }
+
+  .manholder{
+    height: 500px;
+    transform: scale(1) !important;
+  }
+
+  .title {
+    font-Size: 30px;
+  }
+
+  .buttonText{
+    font-Size: 20px;
+  }
+
+  .tokeninfotitletext{
+    font-Size: 30px;  
+  }
+
+  .tokeninfotext{
+    font-Size: 25px;
+  }
+
+  .tokeninfonametext{
+    font-Size: 18px; 
+  }
+
+  .tokenabouttitle{
+    font-Size: 40px;
+    margin-block-start: 0px;
+  }
+
+  .tokenaboutdesc{
+    font-Size: 15px; 
+  }
+
+  .familybox{
+    width: 80%;
+  }
+
+  .familyboxsec{
+    width: 40%;
+  }
+
+  .utilholder{
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+  }
+
+  .utilbox{
+    width: 90%;
+    height: 50%;
+    padding-top: 25px;
+  }
+
+  .utiltext{
+    font-size: 15px;
+    margin-block-start: 0px;
+  }
+
+  .logoholder{
+    left: 0%;
+    right: 0%;
+    top:10px;
+    margin-inline: auto;
+  }
+
+  .utilrow{
+    height:auto;
+  }
+
+  .infocolumn{
+    height:500px;
+  }
+  
+  .infobigcolumn{
+    height:auto;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .columns {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.desktitle{
+  font-Size: 180px;
+  color:#e84839;
+  font-Family: Six Caps;
+  text-Transform: uppercase;
+  text-shadow: -4px 5px 5px rgba(0,0,0,0.6);
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+
+.ocnholder{
+  /* width:100%; */
+  position:absolute;
+  top:150px;
+  right: 150px;
+  display:flex; 
+  align-Items:center; 
+  justify-Content:center;
+}
+
+.tokeninfotitletextdesk{
+  color:#e84839; 
+  font-Size: 60px;  
+  font-Family: Poiret One;
+  margin-Bottom: 10px;
+  width:100%; 
+  text-Transform:uppercase;
+  text-Align:center;
+}
+
+.desknote{
+  width:90%;
+  height:75%;
+}
+
+.desktokenaboutdesc{
+  color:black; 
+  font-Size: 35px; 
+  font-Family:"Poiret One";
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .desktitle{
+    font-size: 55px;
+  }
+  .ocnholder{
+    right: 30px;
+    top: 220px;
+    left: 180px;
+  }
+
+  .tokeninfotitletextdesk{
+    font-Size: 25px;  
+  }
+
+  .desknote{
+    width:90%;
+    /* height:100%; */
+  }
+
+  .desktokenaboutdesc{
+    font-Size: 15px; 
+  }
+}
+
+@media (max-width: 1000px) and (max-height: 720px) {
+
+  .desknote{
+    width:90%;
+    height:100%;
+  }
+
+  
+}
+
+.presaleprogressfillbarback{
+  width:60%; 
+  height:25px; 
+  text-Align:center;
+  background-Color:#e84839;
+  border-Radius:12px;
+  display:flex; 
+  align-Items:center;
+  justify-Content:flex-start;
+  position:relative;
+}
+.presaleprogressfillbar{
+  width:10%; 
+  height:25px; 
+  background-Color:orange;
+  border-Top-Left-Radius:12px;
+  border-Bottom-Left-Radius:12px;
+}
+
+.presaleprogresstext{
+  font-Size:18px;
+  font-Weight:600;
+  margin-Block-Start:0; 
+  margin-Block-End:0;
+  margin-Top:0;
+  position:absolute;
+  right:0;
+  left:0;
+}
+
+.ocnPriceText{
+  font-Size:20px;
+  font-Weight:600;
+  margin-Block-Start:0;
+  margin-Block-End:0;
+  margin-Top:20px;
+}
+
+.caTitle{
+  font-Size:20px;
+  font-Weight:600;
+  margin-Block-Start:0;
+  margin-Block-End:0;
+  margin-Top:20px;
+}
+
+.presaleinfobox{
+  width:100%;
+  height:20%; 
+  border-Radius: 6px;
+  display:flex; 
+  align-Items:center;
+  justify-Content:center;
+  flex-Direction:column;
+  border-Width: 2px;
+  border-Color:white; 
+  border-Style:solid; 
+  position:relative;
+}
+
+.presaleboxTitletext{
+  font-Size: 40px;
+  text-align: center;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.presaleinfotext{
+  font-Size: 20px; 
+  width:90%;
+  text-Align:center;
+  margin-Block-Start:0;
+}
+
+.presaleswapcard{
+  padding: 0; 
+  max-Width:100%;
+}
+
+.presalecardinfotag0{
+  width: 300px; 
+  font-Size: 15px;
+  font-Weight:bold;
+}
+
+.presalecardbalance{
+  color: white;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: 20px;
+}
+
+.presalecardinputname{
+  width: 100px;
+  height: 70px;
+  display:flex;
+  align-Items:center;
+}
+
+.presalecardinputnametext{
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.presalecardinputflex{
+  flex-direction: row;
+}
+
+.presalecardinputholder{
+  width: 200px;
+  height: 70px;
+}
+
+.presalecardinputtext{
+  font-Size: 40px;
+}
+
+.presalecardoutputText{
+  font-Weight:bold; 
+  width: 100%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: 20px;
+}
+
+.presaleinputbox{
+  width:90px;
+  height: 50px;
+  border-Width: 2px;
+  display:flex;
+  align-Items:center; 
+  justify-Items:center;
+  gap: 5
+}
+
+
+@media (max-width: 1000px) {
+
+  .presaleprogressfillbarback{
+    width:80%;
+  }
+
+  .presaleprogresstext{
+    font-Size:12px;
+  }
+
+  .presaleinfobox{
+    height:40%; 
+  }
+
+  .ocnPriceText{
+    font-Size:14px;
+  }
+  .presaleboxTitletext{
+    font-size: 18px;
+  }
+
+  .presalecardbalance{
+    font-size: 14px;
+  }
+
+  .presaleinfotext{
+    font-Size: 12px; 
+  }
+
+  .presaleswapcard{
+    max-width:100%;
+  }
+
+  .presalecardinfotag0{
+    width: 100%;
+    font-size: 12px; 
+  }
+
+  .presalecardinputname{
+    width: 70px;
+    height: 50px;
+  }
+
+  .presalecardinputholder{
+    width: 100px;
+    height: 50px;
+  }
+
+  .presalecardinputtext{
+    font-Size: 20px;
+  }
+
+  .presalecardinputflex{
+    flex-direction: column;
+  }
+
+  .presaleinputbox{
+    width:90px;
+    height: 50px;
+    border-Width: 2px;
+    display:flex;
+    align-Items:center; 
+    justify-Items:center;
+    gap: 5
+  }
+}
+
+
+
+
