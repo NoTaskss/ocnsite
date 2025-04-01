@@ -27,6 +27,7 @@ import { getProvider } from '../../utils/getProvider';
 import PhantomSignInButton from '../../components/smallcomps/phantomsigninbutton';
 import { PublicKey } from '@solana/web3.js';
 import { useGlobalContext } from '../../contexts';
+import { publicKey } from '@raydium-io/raydium-sdk';
 
 const PresalePage: NextPage = () => { 
 
@@ -128,7 +129,7 @@ const PresalePage: NextPage = () => {
         return () => {
           provider.disconnect();
         };
-      }, [provider]);
+    }, [provider]);
 
     const [stepIndex, setStepIndex] = useState(0)
 
@@ -138,8 +139,10 @@ const PresalePage: NextPage = () => {
 
     const [userTokenBalance, setUserTokenBalance] = useState<any>({tokenBalance: 0, displayString: "0", mintAd: ""})
 
-    const { publicKey, sendTransaction, connected } = useWallet();
+    const { publicKey: walletPublicKey, sendTransaction, connected } = useWallet();
     const { connection } = useConnection();
+
+    let publicKey: any = provider?.isConnected ? provider?.publicKey : walletPublicKey
     
     const fadeInUp = {
         hidden: { opacity: 0, y: 50 },
@@ -231,8 +234,9 @@ const PresalePage: NextPage = () => {
     }
 
     const GetUserSolBalance = async () => {
-            
-            if(!publicKey || !connected){
+        console.log("GETTING SOL BAL ", publicKey, " --- ")
+            if(!publicKey) //|| !connected)
+            {
                 return
             }
     
@@ -259,9 +263,10 @@ const PresalePage: NextPage = () => {
 
     function GetUserBalances(){
 
-        if(!connected){
+        if(!connected && !provider?.isConnected){
             return
         }
+
         GetUserSolBalance()
 
         GetUserBalanceOfToken(OCN_TOKEN.mint.toString())

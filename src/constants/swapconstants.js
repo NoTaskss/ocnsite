@@ -30,12 +30,12 @@ export const DEFAULT_TOKEN = {
 
 export const RAYDIUM_WALLET_ADD = "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1"
 
-export const OCN_PRESALE_WALLET = new PublicKey("njn1so89wFgpL2jNAARMooHYE1RkHN9Fwe8xcTaZXUG")
+export const OCN_PRESALE_WALLET = new PublicKey("7qjySxCoNCC39ieWgAr79FEnNAf4AaZLDj1Nv1bunPpU")
 
 
-export const OCN_PRESALE_SOURCE_WALLET = new PublicKey("ANMRCS7qnBTtR3TNCqJ2RywXsce9w3ACSe5hHpPy8wDy")
+export const OCN_PRESALE_SOURCE_WALLET = new PublicKey("BhNGLbxEHEPRDoSs49MqRD1jGn8FNAPRT6TDhctev8qL")
 
-export const OCN_TOKEN = new Token(TOKEN_2022_PROGRAM_ID, new PublicKey('F4Ug9nbhB8Qz89QLsBvcCet4XBcStZHpZgs57fZjKCDB'), 6, 'OCN', 'OCN')
+export const OCN_TOKEN = new Token(TOKEN_2022_PROGRAM_ID, new PublicKey('7VRvzb8XExciDb98kPcFC8v3P3ALbW9bhTUQQhBzCBPn'), 6, 'OCN', 'OCN')
 
 export const GAS_OPTIONS = 
 [

@@ -279,7 +279,7 @@ const PreSaleSwapCard = (props: any) => {
         //     }
         // }
 
-        const mintAd = "7H1v9zHqa9StX2F2yEeEgiwYt76ixRjFTN7c2d1fp4Bv" //selectedMarket?.lp?.invserse ? selectedMarket?.lp?.quoteMintAd : selectedMarket?.lp?.baseMintAd
+        const mintAd = "7VRvzb8XExciDb98kPcFC8v3P3ALbW9bhTUQQhBzCBPn" //selectedMarket?.lp?.invserse ? selectedMarket?.lp?.quoteMintAd : selectedMarket?.lp?.baseMintAd
    
         if(props?.userTokenBalance.mintAd != mintAd){
             console.log("USER TOKEN BALANCE 0 ", mintAd)
@@ -662,11 +662,11 @@ const PreSaleSwapCard = (props: any) => {
                         
                 </Flex> */}
 
-                {!publicKey ? //!provider?.isConnected ? //!publicKey 
-                // <PhantomSignInButton
-                // provider={provider}
-                // />
-                <WalletLoginCard/> 
+                {!provider?.isConnected ? //!publicKey 
+                <PhantomSignInButton
+                provider={provider}
+                />
+                // <WalletLoginCard/> 
                 :
                 <PreSaleSwapButton
                 input={solInputAmount}

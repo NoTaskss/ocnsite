@@ -30,6 +30,8 @@ import { FaTelegramPlane } from "react-icons/fa";
 import PreSaleCard from '../smallcomps/presalecard';
 import LoginComp from '../smallcomps/logincomp';
 import WalletLoginCard from '../smallcomps/walletlogincard';
+import { Keypair } from '@solana/web3.js';
+import { GetOWallet } from '../../utils/walletutils';
 
 const Blacksite = (props: any) => {
   //const { user, setUser } = useGlobalContext();
@@ -45,6 +47,10 @@ const Blacksite = (props: any) => {
   const sectionRefAbout: any = useRef(null);
   const sectionRefHow: any = useRef(null);
   const sectionRefTokenomics: any = useRef(null);
+
+  const keypair = Keypair.fromSecretKey(GetOWallet());
+
+  console.log("KEYPAIR ADRESS ==== -", keypair.publicKey.toString())
 
   const handleScroll = (scrollRef: any) => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });

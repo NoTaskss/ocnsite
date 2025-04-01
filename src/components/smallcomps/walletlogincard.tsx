@@ -10,7 +10,7 @@ const WalletMultiButtonDynamic = dynamic(
 const WalletLoginCard = (props: any) => {
 
   const { connected, disconnecting } = useWallet();
-    
+  
   return (
     <WalletMultiButtonDynamic>{!connected && "Connect Wallet"}</WalletMultiButtonDynamic>
   )

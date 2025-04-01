@@ -15,10 +15,11 @@ import { Text } from '../text';
 export const PreSaleSwapButton = (props: any) => {
 
     const { connection } = useConnection();
-    const { publicKey: walletPublicKey, sendTransaction, signTransaction } = useWallet();
+    const { publicKey: walletPublicKey, sendTransaction, signTransaction, wallets } = useWallet();
 
     const {provider} = props
 
+   console.log("ADDAPTERR === ", wallets)
     const onClick = useCallback(async () => {
 
         const publicKey: any = walletPublicKey ? walletPublicKey : provider?.publicKey
